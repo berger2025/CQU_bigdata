@@ -344,6 +344,8 @@
       ```
 
       > 注意：中间需要空两行。
+      > i进入编辑，esc退出编辑，:wq保存退出
+      > 配置好重启网卡,命令service network restart
 
       ![image-20211221124025227](https://blog-imgs-1256686095.cos.ap-guangzhou.myqcloud.com/image-20211221124025227.png)
 
@@ -356,7 +358,10 @@
    ```bash
    sudo yum groupintsall "GOME Desktop"
    ```
-
+   if "no command groupinstall" try 
+   ```bash
+   yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
+   ```
 2. 用命令启动GNOME
 
    ```bash
